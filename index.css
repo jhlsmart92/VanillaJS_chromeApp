@@ -2,7 +2,7 @@ body {
     background-color: #ecf0f1;
 }
 h1 {
-    color:#34495e;
+    color:white;
     transition : color 0.5s ease-in-out;
 }
 
@@ -17,6 +17,7 @@ h1 {
 .form,
 .greetings {
     display: none;
+    color: white;
 }
 
 .showing {
@@ -39,4 +40,24 @@ h1 {
     height: 100%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
+}
+
+.box {
+    background-color: gray;
+    opacity: 0.6;
+    z-index: 0;
+    display: block;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.js-toDoList {
+    color: white;
+    font-weight: bold;
+}
+
+.js-weather {
+    color: white;
+    font-weight: bold;
 }
