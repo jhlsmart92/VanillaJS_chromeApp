@@ -8,7 +8,8 @@ function handleImgLoad() {
 
 function paintImage(imgNumber) {
     const image = new Image();
-    image.src = `images/${imgNumber + 1}.jpg`;
+    //image.src = `images/${imgNumber + 1}.jpg`;
+    image.src = `https://source.unsplash.com/random/1920×1080`;
     image.classList.add('bgImage');
     body.appendChild(image);
     image.addEventListener("loadend", handleImgLoad);
