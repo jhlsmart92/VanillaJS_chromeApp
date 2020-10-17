@@ -1,4 +1,5 @@
 const weather = document.querySelector(".js-weather");
+const city = document.querySelector(".js-location");
 
 const API_KEY = "4321825fc3b04d3c423f56e22267125b"; // https://home.openweathermap.org/api_keys
 const COORDS = 'coords';
@@ -12,7 +13,8 @@ function getWeather(lat, lng) {
         console.log(json);
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature}℃ @ ${place}`;
+        weather.innerText = `Temperature: ${temperature}℃`;
+        city.innerText = `Location: ${place}`;
     }); //once the json is ready,
 }
 
