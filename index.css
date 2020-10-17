@@ -1,9 +1,11 @@
 body {
     background-color: #ecf0f1;
 }
+
 h1 {
     color:white;
     transition : color 0.5s ease-in-out;
+    font-size: 50px;
 }
 
 .clicked {
@@ -43,6 +45,7 @@ h1 {
 }
 
 .box {
+    position: absolute;
     background-color: gray;
     opacity: 0.6;
     z-index: 0;
@@ -50,6 +53,8 @@ h1 {
     width: max-content;
     padding: 2rem;
     border-radius: 1rem;
+    left: 5%;
+    top: 5%;
 }
 
 .js-toDoList {

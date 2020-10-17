@@ -25,7 +25,7 @@ function paintToDo(text) { // want to make li in the ul tag.
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const newId = toDos.length + 1;
-    delBtn.innerText = "❌";
+    delBtn.innerText = "X"; //❌
     delBtn.addEventListener("click", deleteToDo);
     const span = document.createElement("span");
     span.innerText = text;
